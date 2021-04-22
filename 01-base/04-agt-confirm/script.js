@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function info() {
+    alert ("Please provide us with the requested information to proceed.")
+    let getAge = prompt("Type in your current age:");
+    let getGender = prompt("Type in your gender:");
+    let getTown = prompt("Type in the name of your hometown:");
 
-    // your code here
-
+    let getInfo = confirm(`Your responses:
+Age: ${getAge}
+Gender: ${getGender}
+Town: ${getTown}
+Is this information correct? Please press OK to continue.`);
+    if (getInfo!== true) {
+        info();
+    }
 })();
+
