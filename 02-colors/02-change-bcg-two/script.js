@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+//declare function
+function changeColor(col) {
+    document.body.style.backgroundColor = col;
+}
 
-    // your code here
+//Add event listener to dom element and call the change color function
+run.addEventListener("click", function () {
+    let input = document.getElementById("color").value;
+    changeColor(input);
+});
 
-})();
+
+// click a button
+// value input
+// change background color
