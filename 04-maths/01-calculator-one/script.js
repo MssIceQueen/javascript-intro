@@ -25,6 +25,7 @@
         });
 
     document.getElementById("multiplication").addEventListener("click", function () {
+            let valueOne_multi = document.getElementById("op-one").value;
             let valueTwo_multi = document.getElementById("op-two").value;
             let result_multi = Number(valueOne_multi) * Number(valueTwo_multi);
             alert(result_multi);
@@ -38,6 +39,7 @@
     });
 })();
 
+// input a number (=value)
 // when you click the button ( addEventListener("click", function () {what needs to be calculated} )
 // get the value of the input ( declare a variable = document.getElementById("element-id").value)
 // get the calculation to work (let result_elementid = Number (value1) (mathsign) (value2);
