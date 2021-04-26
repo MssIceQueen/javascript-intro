@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Dreddy",
             lastname: "Nussgen",
@@ -89,6 +89,18 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let filterAge = element => element.age > 18;
+        let filteredList = people.filter(filterAge);
 
+        console.table(filteredList);
+    });
 })();
+
+// click the button
+// New array with only the elements with age more than 18
+// Get the elements with age more than 18 => element.age > 18
+// We need to assign a variable to it so we can use the age to filter the list => let filterAge = element => element.age > 18
+// Filter the existing array on age => people.filter(filterAge)
+// Assign a variable so the console can log the outcome => let filteredList = people.filter(filterAge)
+// Log the outcome in the console in a nice table => console.table(filteredList)
