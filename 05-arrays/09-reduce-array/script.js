@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -89,6 +89,15 @@
         },
     ];
 
-    // your code here
-
+    document.getElementById("run").addEventListener("click", function () {
+        let total = (ages, current) => {
+            return ages + current.age;
+        };
+        let ages = people.reduce(total, 0);
+        console.log(ages);
+    });
 })();
+
+
+// click on the button
+// Total amount of the persons ages
