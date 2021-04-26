@@ -26,6 +26,16 @@
         "cerise",
     ];
 
-    // your code here
-
+    document.getElementById("run").addEventListener("click", function () {
+        fruits.forEach(function (fruits) {
+            console.log(fruits);
+        });
+    });
 })();
+
+
+
+// click on the button
+// it executes a function
+// the function makes sure that each value of the array is displayed
+// => foreach element of fruits, we execute the function with the parameter the string fruits, so every element of fruits will be displayed (=console.log)
