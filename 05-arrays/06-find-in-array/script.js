@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Bradford",
             lastname: "Coldbath",
@@ -89,6 +89,24 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let person = people.find((element) => {
+            return element.lastname === "Dupont" && element.firstname === "Jean";
+        });
 
+        console.log("Email address:" + person.email);
+        console.log("Index:"+ people.indexOf(person));
+
+        });
 })();
+
+// click the button
+// find the email address & index from a specific person in the array called people and display
+// Look for a person = let person
+// Find the person in the array = people.find
+// We are looking for specific elements = element
+// We want the exact name = return element.lastname === "Dupont" && element.firstname === "Jean"
+
+// We want the console to log: email address and index of the person =
+//         console.log("Email address:" + person.email);
+//         console.log("Index:"+ people.indexOf(person))
