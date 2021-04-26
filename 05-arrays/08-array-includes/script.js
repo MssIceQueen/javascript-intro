@@ -26,6 +26,20 @@
         "cherry",
     ];
 
-    // your code here
-
+    document.getElementById("run").addEventListener("click",  () => {
+        let condition = fruits.includes("apple");
+        if (condition === true){
+            console.log ("yes");
+        }
+        else{
+            console.log("no");
+        }
+    });
 })();
+
+// click button
+// declare which condition the function needs to look for = let condition = fruits.includes("apple")
+// if the condition is met log yes in the console =
+//          if (condition === true){console.log ("yes");}
+// if the condition is not met log no =
+//         else{ console.log("no");}
